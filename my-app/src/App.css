@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 body {
+  margin: 0;
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 39%,
     rgba(255, 247, 231, 1) 68%
   ) !important;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  margin: 0px;
 }
