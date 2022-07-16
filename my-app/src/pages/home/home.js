@@ -18,7 +18,7 @@ function Home() {
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>
-            <Text>Home</Text>
+            <Text>tf</Text>
           </VStack>
         </Grid>
       </Box>
