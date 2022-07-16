@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   ChakraProvider,
-  Box,
   VStack,
   theme,
   Input,

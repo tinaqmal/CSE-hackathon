@@ -4,13 +4,11 @@ import {
   ChakraProvider,
   VStack,
   theme,
-  Input,
   Button,
   Container,
   Text,
   Heading,
   Checkbox,
-  Stack,
   SimpleGrid,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
@@ -21,7 +19,7 @@ function Categories() {
       <ColorModeSwitcher justifySelf="flex-end" />
 
       <Container maxW="850px" marginBlockStart={20}>
-        <VStack spacing={3}>
+        <VStack spacing={10}>
           <Heading as="h1" fontSize="30px">
             Choose the type of content you want Nectar to focus on
           </Heading>
@@ -57,9 +55,13 @@ function Categories() {
             </Checkbox>
           </SimpleGrid>
 
-          <a href="/home">
-            <Button colorScheme="orange">Save</Button>
-          </a>
+          <Container centerContent>
+            <a href="/home">
+              <Button colorScheme="orange" width="200px">
+                Save
+              </Button>
+            </a>
+          </Container>
         </VStack>
       </Container>
     </ChakraProvider>

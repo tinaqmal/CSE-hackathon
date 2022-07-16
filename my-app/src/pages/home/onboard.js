@@ -28,13 +28,19 @@ function Onboard() {
           <Text as="u">Forgot Password </Text>
 
           <a href="/home">
-            <Button colorScheme="orange">Login</Button>
+            <Button colorScheme="orange" width="300px">
+              Login
+            </Button>
           </a>
           <a href="/signup">
-            <Button colorScheme="orange">Sign Up</Button>
+            <Button colorScheme="orange" width="300px" variant="outline">
+              Sign Up
+            </Button>
           </a>
           <a href="/categories">
-            <Button colorScheme="orange">Continue As Guest</Button>
+            <Button colorScheme="orange" width="300px" variant="outline">
+              Continue As Guest
+            </Button>
           </a>
         </VStack>
       </Container>
