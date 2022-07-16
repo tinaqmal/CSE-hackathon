@@ -41,3 +41,69 @@ export const animalArticles = [
     source: 'nationalgeographic.com',
   },
 ];
+
+export const scienceArticles = [
+  {
+    heroImage: beeImage,
+    title:
+      'Worldd Bee Day: eight projects making a difference to bees this year',
+    source: 'bee.com',
+  },
+  {
+    heroImage: polarImage,
+    title:
+      'Life Finds a Way’: Polar Bears Successfully Adapt Even Without As Much Sea Ice',
+    source: 'nationalgeographic.com',
+  },
+
+  {
+    heroImage: lambImb,
+    title:
+      'Sam the Lamb is Nursed Through Incredible Recovery After Falling off Highway Truck',
+    source: 'nationalgeographic.com',
+  },
+  {
+    heroImage: dogMarryImg,
+    title:
+      'Till Death Do Us Bark: Inseparable Shelter Dogs Get Married in Adorable Ceremony',
+    source: 'swns.com',
+  },
+  {
+    heroImage: rhinoImg,
+    title: 'Rhinos Back from the Brink of Extinction',
+    source: 'nationalgeographic.com',
+  },
+];
+
+export const environmentArticles = [
+  {
+    heroImage: beeImage,
+    title:
+      'World Bddee Day: eight projects making a difference to bees this year',
+    source: 'bee.com',
+  },
+  {
+    heroImage: polarImage,
+    title:
+      'Life Finds a Way’: Polar Bears Successfully Adapt Even Without As Much Sea Ice',
+    source: 'nationalgeographic.com',
+  },
+
+  {
+    heroImage: lambImb,
+    title:
+      'Sam the Lamb is Nursed Through Incredible Recovery After Falling off Highway Truck',
+    source: 'nationalgeographic.com',
+  },
+  {
+    heroImage: dogMarryImg,
+    title:
+      'Till Death Do Us Bark: Inseparable Shelter Dogs Get Married in Adorable Ceremony',
+    source: 'swns.com',
+  },
+  {
+    heroImage: rhinoImg,
+    title: 'Rhinos Back from the Brink of Extinction',
+    source: 'nationalgeographic.com',
+  },
+];

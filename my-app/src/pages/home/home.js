@@ -1,7 +1,17 @@
 import React from 'react';
-import { Box, Image, Text, VStack, Grid, Flex, Center } from '@chakra-ui/react';
+import {
+  Box,
+  Image,
+  Text,
+  VStack,
+  Grid,
+  Flex,
+  Center,
+  SimpleGrid,
+} from '@chakra-ui/react';
 
 import ArticleRecSection from './ArticleRecSection';
+import Sidebar from './sidebar/sidebar';
 
 function Home() {
   return (
@@ -10,8 +20,10 @@ function Home() {
         <Center>
           <Image src={'logo.png'} height={'60%'}></Image>
         </Center>
-
-        <ArticleRecSection></ArticleRecSection>
+        <Flex>
+          <Sidebar></Sidebar>
+          <ArticleRecSection></ArticleRecSection>
+        </Flex>
       </Grid>
     </Box>
   );

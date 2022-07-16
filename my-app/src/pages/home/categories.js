@@ -10,6 +10,7 @@ import {
   Box,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+import categoryTypes from './categoryTypes';
 
 function Categories() {
   return (
@@ -27,30 +28,11 @@ function Categories() {
           </Text>
 
           <SimpleGrid columns={2} spacing={5}>
-            <Checkbox size="lg" colorScheme="green">
-              Science
-            </Checkbox>
-            <Checkbox size="lg" colorScheme="green">
-              Environment
-            </Checkbox>
-            <Checkbox size="lg" colorScheme="green">
-              Animals
-            </Checkbox>
-            <Checkbox size="lg" colorScheme="green">
-              Education
-            </Checkbox>
-            <Checkbox size="lg" colorScheme="green">
-              Transport
-            </Checkbox>
-            <Checkbox size="lg" colorScheme="green">
-              Animals
-            </Checkbox>
-            <Checkbox size="lg" colorScheme="green">
-              People
-            </Checkbox>
-            <Checkbox size="lg" colorScheme="green">
-              Discoveries
-            </Checkbox>
+            {categoryTypes.map(cat => (
+              <Checkbox size="lg" colorScheme="green">
+                {cat}
+              </Checkbox>
+            ))}
           </SimpleGrid>
 
           <Container centerContent>

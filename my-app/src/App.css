@@ -6,10 +6,7 @@ body {
     rgba(255, 255, 255, 1) 39%,
     rgba(255, 247, 231, 1) 68%
   ) !important;
-}
-
-html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif !important;
 }
 
 p {

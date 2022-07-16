@@ -3,10 +3,15 @@ import ArticleCard from './ArticleCard';
 import { SimpleGrid } from '@chakra-ui/react';
 import { animalArticles } from '../../data/articles';
 
-const ArticleRecSection = () => {
-  const heroArticle = animalArticles[0];
-  console.log(animalArticles);
-  console.log(heroArticle);
+const ArticleRecSection = category => {
+  let articles;
+  if (category === '🐶 Animals') {
+    articles = animalArticles;
+  } else if (category === 'For you') {
+    articles = getForYouRecommendations();
+  }
+  const heroArticle = articles[0];
+
   return (
     <SimpleGrid w="100%" columns={2} spacingX="12px" spacingY="20px">
       <ArticleCard
@@ -29,4 +34,5 @@ const ArticleRecSection = () => {
   );
 };
 
+const getForYouRecommendations = () => {};
 export default ArticleRecSection;
