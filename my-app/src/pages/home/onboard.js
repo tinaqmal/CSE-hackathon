@@ -24,9 +24,12 @@ function Onboard() {
 
           <Input variant="outline" placeholder="email" />
           <Input variant="outline" placeholder="password" />
-
-          <Button colorScheme="orange">Login</Button>
-          <Button colorScheme="orange">Sign Up</Button>
+          <a href="/home">
+            <Button colorScheme="orange">Login</Button>
+          </a>
+          <a href="/signup">
+            <Button colorScheme="orange">Sign Up</Button>
+          </a>
           <a href="/categories">
             <Button colorScheme="orange">Continue As Guest</Button>
           </a>
