@@ -21,7 +21,7 @@ import {
 
 function Content() {
   return (
-    <Box paddingLeft={'180px'} paddingRight={'180px'} paddingTop={'60px'}>
+    <Box paddingLeft={'250px'} paddingRight={'250px'} paddingTop={'60px'}>
       <Box>
         <Flex>
           <Box
