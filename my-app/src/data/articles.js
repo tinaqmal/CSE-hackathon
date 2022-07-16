@@ -9,7 +9,6 @@ import lambImb from '../assets/animals/lamb.jpg';
 import dogMarryImg from '../assets/animals/dogmarry.jpg';
 import rhinoImg from '../assets/animals/rhino.jpg';
 
-// }
 export const animalArticles = [
   {
     heroImage: beeImage,

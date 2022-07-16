@@ -6,9 +6,6 @@ import { animalArticles } from '../../data/articles';
 const ArticleRecSection = () => {
   const heroArticle = animalArticles[0];
 
-  // const heroArticle = animalArticles.shift();
-
-  //   console.log(heroArticle);
   return (
     <SimpleGrid w="100%" columns={2} spacingX="12px" spacingY="20px">
       <ArticleCard
