@@ -27,7 +27,9 @@ function Onboard() {
 
           <Button colorScheme="orange">Login</Button>
           <Button colorScheme="orange">Sign Up</Button>
-          <Button colorScheme="orange">Continue As Guest</Button>
+          <a href="/categories">
+            <Button colorScheme="orange">Continue As Guest</Button>
+          </a>
         </VStack>
       </Container>
     </ChakraProvider>
