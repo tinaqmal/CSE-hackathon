@@ -110,8 +110,7 @@ export const environmentArticles = [
   },
   {
     heroImage: environment5,
-    title:
-      'He Planted a Giant Sequoia in the UK to Offset His Carbon Footprint for Life – And 700 More to Make a Forest',
-    source: 'Andy Corbley',
+    title: 'Seven solutions to climate change that need to happen now',
+    source: 'Martin Wright',
   },
 ];
