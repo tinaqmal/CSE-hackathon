@@ -7,6 +7,7 @@ import {
   Input,
   Button,
   Container,
+  Text,
   Image,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
@@ -24,6 +25,8 @@ function Onboard() {
 
           <Input variant="outline" placeholder="email" />
           <Input variant="outline" placeholder="password" />
+          <Text as="u">Forgot Password </Text>
+
           <a href="/home">
             <Button colorScheme="orange">Login</Button>
           </a>
