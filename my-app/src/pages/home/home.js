@@ -1,26 +1,19 @@
 import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  VStack,
-  Grid,
-  theme,
-} from '@chakra-ui/react';
-import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+import { Box, Image, Text, VStack, Grid, Flex, Center } from '@chakra-ui/react';
+
+import ArticleRecSection from './ArticleRecSection';
 
 function Home() {
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Text>tf</Text>
-          </VStack>
-        </Grid>
-      </Box>
-    </ChakraProvider>
+    <Box>
+      <Grid paddingX={'20px'}>
+        <Center>
+          <Image src={'logo.png'} height={'60%'}></Image>
+        </Center>
+
+        <ArticleRecSection></ArticleRecSection>
+      </Grid>
+    </Box>
   );
 }
 

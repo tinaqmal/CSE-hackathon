@@ -1,9 +1,7 @@
 import React from 'react';
 import {
-  ChakraProvider,
   Box,
   VStack,
-  theme,
   Input,
   Button,
   Container,
@@ -14,7 +12,7 @@ import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 
 function Onboard() {
   return (
-    <ChakraProvider theme={theme}>
+    <Box>
       <ColorModeSwitcher justifySelf="flex-end" />
 
       <Container maxW="500px" marginBlockStart={20}>
@@ -44,7 +42,7 @@ function Onboard() {
           </a>
         </VStack>
       </Container>
-    </ChakraProvider>
+    </Box>
   );
 }
 

@@ -1,20 +1,19 @@
 import React from 'react';
 import {
-  ChakraProvider,
   VStack,
-  theme,
   Input,
   Button,
   Container,
   Checkbox,
   Text,
   Heading,
+  Box,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 
 function Signup() {
   return (
-    <ChakraProvider theme={theme}>
+    <Box>
       <ColorModeSwitcher justifySelf="flex-end" />
 
       <Container maxW="500px" marginBlockStart={20}>
@@ -40,7 +39,7 @@ function Signup() {
           </a>
         </VStack>
       </Container>
-    </ChakraProvider>
+    </Box>
   );
 }
 

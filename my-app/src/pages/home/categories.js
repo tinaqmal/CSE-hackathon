@@ -1,21 +1,19 @@
 import React from 'react';
-import { useState } from 'react';
 import {
-  ChakraProvider,
   VStack,
-  theme,
   Button,
   Container,
   Text,
   Heading,
   Checkbox,
   SimpleGrid,
+  Box,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 
 function Categories() {
   return (
-    <ChakraProvider theme={theme}>
+    <Box>
       <ColorModeSwitcher justifySelf="flex-end" />
 
       <Container maxW="850px" marginBlockStart={20}>
@@ -64,7 +62,7 @@ function Categories() {
           </Container>
         </VStack>
       </Container>
-    </ChakraProvider>
+    </Box>
   );
 }
 
