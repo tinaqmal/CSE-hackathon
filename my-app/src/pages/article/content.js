@@ -36,7 +36,6 @@ function Content() {
           </Box>
           <Spacer />
           <Box
-            bg="red.400"
             verticalAlign={'text-bottom'}
             fontSize="20px"
             color="black"

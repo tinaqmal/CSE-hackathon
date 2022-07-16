@@ -1,4 +1,5 @@
 const categoryTypes = [
+  '🤩 For you',
   '🧪 Science',
   '🐶 Animals',
   '🌳 Environment',

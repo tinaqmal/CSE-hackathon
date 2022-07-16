@@ -12,8 +12,21 @@ import {
 
 import ArticleRecSection from './ArticleRecSection';
 import Sidebar from './sidebar/sidebar';
+import categoryTypes from './categoryTypes';
+import { useEffect, useState } from 'react';
 
 function Home() {
+  const [activeTab, setActiveTab] = useState(0);
+  const tabClick = id => {
+    setActiveTab(id);
+  };
+  // useEffect(() => {
+  //   setActiveTab(0);
+  // }, []);
+  useEffect(() => {
+    console.log(activeTab.activeTab);
+  }, [activeTab]);
+  useEffect(() => {}, [activeTab]);
   return (
     <Box>
       <Grid paddingX={'20px'}>
@@ -21,8 +34,10 @@ function Home() {
           <Image src={'logo.png'} height={'60%'}></Image>
         </Center>
         <Flex>
-          <Sidebar></Sidebar>
-          <ArticleRecSection></ArticleRecSection>
+          <Sidebar active={activeTab} tabClick={tabClick}></Sidebar>
+          <ArticleRecSection
+            category={categoryTypes[activeTab]}
+          ></ArticleRecSection>
         </Flex>
       </Grid>
     </Box>

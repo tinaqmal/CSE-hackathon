@@ -28,7 +28,7 @@ function Categories() {
           </Text>
 
           <SimpleGrid columns={2} spacing={5}>
-            {categoryTypes.map(cat => (
+            {categoryTypes.slice(1).map(cat => (
               <Checkbox size="lg" colorScheme="green">
                 {cat}
               </Checkbox>
