@@ -1,6 +1,24 @@
-import React from 'react';
-import { Box, Text } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import { Box, Text, Button } from '@chakra-ui/react';
 
+const ReactButton = () => {
+  const [liked, setLiked] = useState(false);
+  const onLike = () => {
+    setLiked(!liked);
+  };
+  return (
+    <Button
+      bg={liked ? '#efaa1f' : '#E2E8F0'}
+      position={'absolute'}
+      right={'16px'}
+      top="16px"
+      onClick={onLike}
+    >
+      {' '}
+      😄{' '}
+    </Button>
+  );
+};
 const ArticleCard = ({ size, img, title, source }) => {
   let h;
 
@@ -27,6 +45,7 @@ const ArticleCard = ({ size, img, title, source }) => {
           {source}
         </Text>
       </Box>
+      <ReactButton></ReactButton>
     </Box>
   );
 };

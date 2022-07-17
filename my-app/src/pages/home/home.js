@@ -7,32 +7,49 @@ import {
   Grid,
   Flex,
   Center,
-  SimpleGrid,
+  Button,
+  Heading,
 } from '@chakra-ui/react';
 
 import ArticleRecSection from './ArticleRecSection';
 import Sidebar from './sidebar/sidebar';
 import categoryTypes from './categoryTypes';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Home() {
   const [activeTab, setActiveTab] = useState(0);
   const tabClick = id => {
     setActiveTab(id);
   };
-  // useEffect(() => {
-  //   setActiveTab(0);
-  // }, []);
-  useEffect(() => {
-    console.log(activeTab.activeTab);
-  }, [activeTab]);
-  useEffect(() => {}, [activeTab]);
+
   return (
     <Box>
       <Grid paddingX={'20px'}>
         <Center>
           <Image src={'logo.png'} height={'60%'}></Image>
         </Center>
+        <Center>
+          <Heading as="h2" fontWeight={'500'}>
+            Good Afternoon, Tina!{' '}
+          </Heading>
+        </Center>
+        <Center>
+          <Heading fontWeight="300" as="i" fontSize="xl">
+            What are you grateful about today?
+          </Heading>
+        </Center>
+
+        <Center></Center>
+        <Flex mb={4} flexDirection="row-reverse">
+          <a href="/">
+            <Button colorScheme={'orange'}>Sign Up</Button>
+          </a>
+          <a href="/">
+            <Button colorScheme={'orange'} mr={3}>
+              Log In
+            </Button>
+          </a>
+        </Flex>
         <Flex>
           <Sidebar active={activeTab} tabClick={tabClick}></Sidebar>
           <ArticleRecSection

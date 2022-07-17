@@ -30,6 +30,7 @@ function Onboard() {
               Login
             </Button>
           </a>
+          <Text>OR</Text>
           <a href="/signup">
             <Button colorScheme="orange" width="300px" variant="outline">
               Sign Up

@@ -18,7 +18,6 @@ const ArticleRecSection = ({ category }) => {
   } else if (category === '🌳 Environment') {
     articles = environmentArticles;
   }
-  useEffect(() => {}, [category]);
 
   const heroArticle = articles[0];
 
