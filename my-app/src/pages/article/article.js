@@ -67,6 +67,9 @@ function Article() {
           </ModalFooter>
         </ModalContent>
       </Modal>
+      <Banner></Banner>
+      <Content></Content>
+      <VStack spacing={8}></VStack>
     </Box>
   );
 }

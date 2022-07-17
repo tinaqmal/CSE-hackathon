@@ -18,7 +18,7 @@ function Banner() {
     <Container
       background={`url("${bannerImage}")`}
       backgroundSize={'cover'}
-      w="100vw"
+      minWidth="100vw"
       h="650px"
       textAlign={'left'}
       position={'relative'}
