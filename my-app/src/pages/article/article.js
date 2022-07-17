@@ -16,11 +16,9 @@ import Content from './content';
 function Article() {
   return (
     <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh">
-        <Banner></Banner>
-        <Content></Content>
-        <VStack spacing={8}></VStack>
-      </Grid>
+      <Banner></Banner>
+      <Content></Content>
+      <VStack spacing={8}></VStack>
     </Box>
   );
 }
